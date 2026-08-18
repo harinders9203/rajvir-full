@@ -12,6 +12,7 @@ import availabilityRoutes from './routes/availability.js';
 import adminRoutes from './routes/admin.js';
 import notificationRoutes from './routes/notifications.js';
 import settingsRoutes from './routes/settings.js';
+import contactRoutes from './routes/contact.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const UPLOAD_DIR = path.join(__dirname, '..', 'uploads');
@@ -33,6 +34,7 @@ app.use('/api', availabilityRoutes);  // /availability
 app.use('/api', appointmentRoutes);   // /appointments
 app.use('/api', notificationRoutes);  // /notifications
 app.use('/api', settingsRoutes);      // /settings
+app.use('/api', contactRoutes);       // /contact
 app.use('/api/admin', adminRoutes);   // /admin/*
 
 app.use('/api', (req, res) => res.status(404).json({ error: 'API route not found.' }));

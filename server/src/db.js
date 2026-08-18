@@ -66,6 +66,7 @@ export async function migrate() {
   const designs = coll('nail_designs');
   const appointments = coll('appointments');
   const notifications = coll('notifications');
+  const contactMessages = coll('contact_messages');
 
   await Promise.all([
     // case-insensitive unique email
@@ -83,6 +84,7 @@ export async function migrate() {
     designs.createIndex({ is_active: 1 }),
     notifications.createIndex({ user_id: 1, is_read: 1 }),
     notifications.createIndex({ user_id: 1, created_at: -1 }),
+    contactMessages.createIndex({ created_at: -1 }),
   ]);
 
   // Singleton salon settings document
