@@ -64,7 +64,7 @@ export default function AdminLogin() {
         <form onSubmit={submit}>
           <div className="field">
             <label>Admin email</label>
-            <input className="input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="admin@blush.com" autoComplete="username" />
+            <input className="input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="singhharinder662@gmail.com" autoComplete="username" />
           </div>
           <div className="field">
             <label>Password</label>
@@ -75,8 +75,6 @@ export default function AdminLogin() {
           </button>
         </form>
         <div className="auth-switch">
-          Demo admin: <strong>admin@blush.com</strong> / <strong>admin123</strong>
-          <br />
           <Link to="/">← Back to website</Link>
         </div>
       </div>

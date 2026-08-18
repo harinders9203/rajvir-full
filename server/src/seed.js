@@ -143,9 +143,9 @@ export async function runSeed({ force = false } = {}) {
 
   const admin = await coll('users').insertOne({
     name: 'Blush Admin',
-    email: 'admin@blush.com',
+    email: 'singhharinder662@gmail.com',
     phone: '+1 (555) 010-0000',
-    password_hash: bcrypt.hashSync('admin123', 10),
+    password_hash: bcrypt.hashSync('Harindr@9203', 10),
     role: 'admin',
     is_active: true,
     created_at: now,
@@ -257,7 +257,7 @@ export async function runSeed({ force = false } = {}) {
   });
 
   console.log(`Seed complete on MongoDB (db: nails, cluster: cluster0.xhqrqbs.mongodb.net)`);
-  console.log('  admin@blush.com / admin123 · sophia@example.com / password123');
+  console.log('  singhharinder662@gmail.com / Harindr@9203 · sophia@example.com / password123');
   await disconnect();
 }
 

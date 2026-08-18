@@ -19,12 +19,12 @@ secure authentication, real-time slot availability, and a complete admin dashboa
 
 **Demo accounts (created by the seed script):**
 
-| Role     | Email                | Password      |
-| -------- | -------------------- | ------------- |
-| Admin    | `admin@blush.com`    | `admin123`    |
-| Customer | `sophia@example.com` | `password123` |
-| Customer | `emma@example.com`   | `password123` |
-| Customer | `olivia@example.com` | `password123` |
+| Role     | Email                          | Password        |
+| -------- | ------------------------------ | --------------- |
+| Admin    | `singhharinder662@gmail.com`   | `Harindr@9203`  |
+| Customer | `sophia@example.com`           | `password123`   |
+| Customer | `emma@example.com`             | `password123`   |
+| Customer | `olivia@example.com`           | `password123`   |
 
 ---
 
